@@ -18,6 +18,7 @@ To prepare the datasets **OBI125** and **Oracle50K** for training, we preprocess
 
 ```bash
 python preprocessing/Oracle50k_OBI125.py
+```
 
 ---
 
@@ -28,12 +29,14 @@ To train the DTML model, use the following command:
 
 ```bash
 python main.py --cuda 0 --n_cpu 8 --dataset Oracle241 --source h --target s --model DTML --preloading
+```
 
 ### Training
 To evaluate the DTML model, use the following command:
 
 ```bash
 python main.py --weight /checkpoint --cuda 0 --n_cpu 8 --dataset Oracle241 --source h --target s --batch_size 256 --preloading --evaluate
+```
 
 ---
 
