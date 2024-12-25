@@ -12,4 +12,31 @@ The following datasets are used in this project for Oracle Bone Character (OBC) 
 
 ---
 
-Let me know if you'd like to add more sections or details!
+## Preprocessing
+
+To prepare the datasets **OBI125** and **Oracle50K** for training, we preprocess these datasets to extract their common character subsets. You can perform this preprocessing by running the following script:
+
+```bash
+python preprocessing/Oracle50k_OBI125.py
+
+---
+
+## Training and Validation
+
+### Training
+To train the DTML model, use the following command:
+
+```bash
+python main.py --cuda 0 --n_cpu 8 --dataset Oracle241 --source h --target s --model DTML --preloading
+
+### Training
+To evaluate the DTML model, use the following command:
+
+```bash
+python main.py --weight /checkpoint --cuda 0 --n_cpu 8 --dataset Oracle241 --source h --target s --batch_size 256 --preloading --evaluate
+
+---
+
+## Citation
+
+Waiting for updates
