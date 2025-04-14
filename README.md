@@ -41,5 +41,14 @@ python main.py --weight /checkpoint --cuda 0 --dataset Oracle241 --source h --ta
 ---
 
 ## Citation
-
-Waiting for updates
+If you use the code in this repository for your research, please cite the paper as follows:
+```
+@article{li2025historical,
+  title={Historical oracle bone character recognition through domain transfer and mutual learning},
+  author={Li, Zhengchen and Wan, Xiuan and Wu, Jiahua and Pan, Shouyong and Fang, Yuchun},
+  journal={Applied Soft Computing},
+  pages={113031},
+  year={2025},
+  publisher={Elsevier}
+}
+```
